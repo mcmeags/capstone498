@@ -35,16 +35,16 @@ create table user_logs_v2(msno VARCHAR(2000),\
 \
 #load data\
 copy transactions_v2 from 's3://capstone-project-498/transactions_v2.csv'\
-credentials'aws_access_key_id=AKIAJK3PW7NDG6VCXNGA;aws_secret_access_key=Df+hTqjLrD7lGhERw1b6e9yqYfg2d69vT8sCA+ul'\
+credentials'aws_access_key_id=<YOUR_KEY_ID>;aws_secret_access_key=<YOUR_KEY>'\
 CSV\
 IGNOREHEADER 1;\
  \
 copy members_v3 from 's3://capstone-project-498/members_v3.csv'\
-credentials'aws_access_key_id=AKIAJK3PW7NDG6VCXNGA;aws_secret_access_key=Df+hTqjLrD7lGhERw1b6e9yqYfg2d69vT8sCA+ul'\
+credentials'aws_access_key_id=<YOUR_KEY_ID>;aws_secret_access_key<YOUR_KEY>'\
 CSV\
 IGNOREHEADER 1;\
 \
 copy user_logs_v2 from 's3://capstone-project-498/user_logs_v2.csv'\
-credentials'aws_access_key_id=AKIAJK3PW7NDG6VCXNGA;aws_secret_access_key=Df+hTqjLrD7lGhERw1b6e9yqYfg2d69vT8sCA+ul'\
+credentials'aws_access_key_id=<YOUR_KEY_ID>;aws_secret_access_key=<YOUR_KEY>'\
 CSV\
 IGNOREHEADER 1;}
